@@ -5,7 +5,42 @@
     "items": {
       "type": "array",
       "items": {
-        "type": "array"
+        "type": "object",
+        "properties": {
+          "kode": {
+            "type": "string"
+          },
+          "tittel": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              },
+              "sn": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              }
+            }
+          },
+          "nivå": {
+            "type": "string"
+          },
+          "ingress": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": [
+          "kode",
+          "tittel",
+          "nivå"
+        ]
       }
     },
     "meta": {
