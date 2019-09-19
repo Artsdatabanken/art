@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "egenskap": {
+            "type": "object",
+            "properties": {
+              "reproduksjon": {
+                "type": "object",
+                "properties": {
+                  "først observert": {
+                    "type": ["number", "string"]
+                  },
+                  "generasjonstid": {
+                    "type": "number"
+                  },
+                  "seksuell": {
+                    "type": "boolean"
+                  },
+                  "norsk bestand": {
+                    "type": ["number", "string"]
+                  },
+                  "aseksuell": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "kode": {
+            "type": "string"
+          },
+          "livsmiljø": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ingress": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              }
+            }
+          },
+          "risikovurdering": {
+            "type": "object",
+            "properties": {
+              "naturtyper": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risiko": {
+                "type": "string"
+              },
+              "overføring andre arter": {
+                "type": "object",
+                "properties": {
+                  "genetisk materiale": {
+                    "type": "number"
+                  },
+                  "parasitter/patogener": {
+                    "type": "number"
+                  }
+                }
+              },
+              "kriterie": {
+                "type": "object",
+                "properties": {
+                  "utenfor definisjon": {
+                    "type": "string"
+                  }
+                }
+              },
+              "arter": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "parasitt": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "egenskap",
+          "id",
+          "kode",
+          "livsmiljø",
+          "ingress",
+          "risikovurdering",
+          "parasitt"
+        ]
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "tittel": {
+          "type": "string"
+        },
+        "produsertUtc": {
+          "type": "string"
+        },
+        "utgiver": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "tool": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "elementer": {
+          "type": "number"
+        }
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  }
+}
