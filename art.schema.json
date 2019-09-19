@@ -7,6 +7,29 @@
       "items": {
         "type": "object",
         "properties": {
+          "foreldre": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kode": {
+            "type": "string"
+          },
+          "tittel": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
+              },
+              "sn": {
+                "type": "string"
+              }
+            }
+          },
           "egenskap": {
             "type": "object",
             "properties": {
@@ -14,7 +37,10 @@
                 "type": "object",
                 "properties": {
                   "først observert": {
-                    "type": ["number", "string"]
+                    "type": [
+                      "number",
+                      "string"
+                    ]
                   },
                   "generasjonstid": {
                     "type": "number"
@@ -23,7 +49,10 @@
                     "type": "boolean"
                   },
                   "norsk bestand": {
-                    "type": ["number", "string"]
+                    "type": [
+                      "number",
+                      "string"
+                    ]
                   },
                   "aseksuell": {
                     "type": "boolean"
@@ -32,11 +61,13 @@
               }
             }
           },
-          "id": {
-            "type": "string"
-          },
-          "kode": {
-            "type": "string"
+          "lenke": {
+            "type": "object",
+            "properties": {
+              "fab": {
+                "type": "string"
+              }
+            }
           },
           "livsmiljø": {
             "type": "array",
@@ -48,6 +79,12 @@
             "type": "object",
             "properties": {
               "nb": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "nn": {
                 "type": "string"
               }
             }
@@ -86,8 +123,36 @@
               "arter": {
                 "type": "array",
                 "items": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
                   "type": "string"
                 }
+              }
+            }
+          },
+          "brødtekst": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "nb": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
               }
             }
           },
@@ -96,12 +161,15 @@
           }
         },
         "required": [
-          "egenskap",
-          "id",
+          "foreldre",
           "kode",
+          "tittel",
+          "egenskap",
+          "lenke",
           "livsmiljø",
           "ingress",
           "risikovurdering",
+          "brødtekst",
           "parasitt"
         ]
       }
