@@ -7,6 +7,17 @@
       "items": {
         "type": "object",
         "properties": {
+          "autor": {
+            "type": "object",
+            "properties": {
+              "navn": {
+                "type": "string"
+              },
+              "år": {
+                "type": "number"
+              }
+            }
+          },
           "foreldre": {
             "type": "array",
             "items": {
@@ -167,6 +178,7 @@
           }
         },
         "required": [
+          "autor",
           "foreldre",
           "kode",
           "nivå",
@@ -219,7 +231,7 @@
   },
   "meta": {
     "tittel": "Art.schema",
-    "produsertUtc": "2019-09-25T10:33:06.210Z",
+    "produsertUtc": "2019-09-25T22:22:43.832Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/art.schema.json",
     "tool": {
