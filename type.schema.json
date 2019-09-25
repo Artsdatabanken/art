@@ -10,6 +10,9 @@
           "kode": {
             "type": "string"
           },
+          "nivå": {
+            "type": "string"
+          },
           "tittel": {
             "type": "object",
             "properties": {
@@ -24,9 +27,6 @@
               }
             }
           },
-          "nivå": {
-            "type": "string"
-          },
           "ingress": {
             "type": "object",
             "properties": {
@@ -38,8 +38,8 @@
         },
         "required": [
           "kode",
-          "tittel",
-          "nivå"
+          "nivå",
+          "tittel"
         ]
       }
     },
@@ -63,6 +63,9 @@
           "properties": {
             "name": {
               "type": "string"
+            },
+            "url": {
+              "type": "null"
             }
           }
         },
@@ -74,5 +77,15 @@
     "$schema": {
       "type": "string"
     }
+  },
+  "meta": {
+    "tittel": "Type.schema",
+    "produsertUtc": "2019-09-25T10:33:06.319Z",
+    "utgiver": "Artsdatabanken",
+    "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
+    "tool": {
+      "name": "art-lastejobb"
+    },
+    "elementer": 3
   }
 }
