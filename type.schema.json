@@ -1,0 +1,232 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "foreldre": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kode": {
+            "type": "string"
+          },
+          "nivå": {
+            "type": "string"
+          },
+          "tittel": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              },
+              "sn": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
+              }
+            }
+          },
+          "url": {
+            "type": "string"
+          },
+          "autoritet": {
+            "type": "object",
+            "properties": {
+              "navn": {
+                "type": "string"
+              },
+              "år": {
+                "type": "number"
+              }
+            }
+          },
+          "autorkode": {
+            "type": "string"
+          },
+          "egenskap": {
+            "type": "object",
+            "properties": {
+              "reproduksjon": {
+                "type": "object",
+                "properties": {
+                  "først observert": {
+                    "type": [
+                      "number",
+                      "string"
+                    ]
+                  },
+                  "generasjonstid": {
+                    "type": "number"
+                  },
+                  "seksuell": {
+                    "type": "boolean"
+                  },
+                  "norsk bestand": {
+                    "type": [
+                      "number",
+                      "string"
+                    ]
+                  },
+                  "aseksuell": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
+          "lenke": {
+            "type": "object",
+            "properties": {
+              "fab": {
+                "type": "string"
+              }
+            }
+          },
+          "livsmiljø": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ingress": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
+              }
+            }
+          },
+          "risikovurdering": {
+            "type": "object",
+            "properties": {
+              "naturtyper": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risiko": {
+                "type": "string"
+              },
+              "overføring andre arter": {
+                "type": "object",
+                "properties": {
+                  "genetisk materiale": {
+                    "type": "number"
+                  },
+                  "parasitter/patogener": {
+                    "type": "number"
+                  }
+                }
+              },
+              "kriterie": {
+                "type": "object",
+                "properties": {
+                  "utenfor definisjon": {
+                    "type": "string"
+                  }
+                }
+              },
+              "arter": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "brødtekst": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "nb": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
+              }
+            }
+          },
+          "parasitt": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "foreldre",
+          "kode",
+          "nivå",
+          "tittel",
+          "url",
+          "autoritet",
+          "autorkode",
+          "egenskap",
+          "lenke",
+          "livsmiljø",
+          "ingress",
+          "risikovurdering",
+          "brødtekst",
+          "parasitt"
+        ]
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "tittel": {
+          "type": "string"
+        },
+        "produsertUtc": {
+          "type": "string"
+        },
+        "utgiver": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "tool": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "null"
+            }
+          }
+        },
+        "elementer": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "meta": {
+    "tittel": "Type.schema",
+    "produsertUtc": "2019-09-29T23:02:21.329Z",
+    "utgiver": "Artsdatabanken",
+    "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
+    "tool": {
+      "name": "art-lastejobb"
+    },
+    "elementer": 3
+  }
+}
