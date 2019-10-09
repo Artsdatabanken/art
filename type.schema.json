@@ -53,6 +53,14 @@
           "autorkode": {
             "type": "string"
           },
+          "beskrivelse": {
+            "type": "object",
+            "properties": {
+              "nob": {
+                "type": "string"
+              }
+            }
+          },
           "egenskap": {
             "type": "object",
             "properties": {
@@ -68,14 +76,14 @@
                   "generasjonstid": {
                     "type": "number"
                   },
-                  "seksuell": {
-                    "type": "boolean"
-                  },
                   "norsk bestand": {
                     "type": [
                       "number",
                       "string"
                     ]
+                  },
+                  "seksuell": {
+                    "type": "boolean"
                   },
                   "aseksuell": {
                     "type": "boolean"
@@ -98,20 +106,6 @@
               "type": "string"
             }
           },
-          "ingress": {
-            "type": "object",
-            "properties": {
-              "nb": {
-                "type": "string"
-              },
-              "en": {
-                "type": "string"
-              },
-              "nn": {
-                "type": "string"
-              }
-            }
-          },
           "risikovurdering": {
             "type": "object",
             "properties": {
@@ -121,8 +115,27 @@
                   "type": "string"
                 }
               },
-              "risiko": {
-                "type": "string"
+              "risikonivå": {
+                "type": "object",
+                "properties": {
+                  "2012": {
+                    "type": "number"
+                  },
+                  "nå": {
+                    "type": "string"
+                  },
+                  "ved_usikkerhet": {
+                    "type": "string"
+                  }
+                }
+              },
+              "kriterie": {
+                "type": "object",
+                "properties": {
+                  "utenfor definisjon": {
+                    "type": "string"
+                  }
+                }
               },
               "overføring andre arter": {
                 "type": "object",
@@ -135,23 +148,52 @@
                   }
                 }
               },
-              "kriterie": {
-                "type": "object",
-                "properties": {
-                  "utenfor definisjon": {
-                    "type": "string"
-                  }
-                }
-              },
               "arter": {
                 "type": "array",
                 "items": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
                   "type": "string"
                 }
               }
             }
           },
           "brødtekst": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "nb": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
+              }
+            }
+          },
+          "ingress": {
             "type": "object",
             "properties": {
               "en": {
@@ -180,9 +222,10 @@
           "egenskap",
           "lenke",
           "livsmiljø",
-          "ingress",
           "risikovurdering",
+          "beskrivelse",
           "brødtekst",
+          "ingress",
           "parasitt"
         ]
       }
@@ -217,11 +260,14 @@
           "type": "number"
         }
       }
+    },
+    "$schema": {
+      "type": "string"
     }
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-09-29T23:02:21.329Z",
+    "produsertUtc": "2019-10-09T07:47:14.677Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
