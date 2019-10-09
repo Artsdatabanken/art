@@ -58,6 +58,15 @@
             "properties": {
               "nob": {
                 "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "nb": {
+                "type": "string"
+              },
+              "nn": {
+                "type": "string"
               }
             }
           },
@@ -193,20 +202,6 @@
               }
             }
           },
-          "ingress": {
-            "type": "object",
-            "properties": {
-              "en": {
-                "type": "string"
-              },
-              "nb": {
-                "type": "string"
-              },
-              "nn": {
-                "type": "string"
-              }
-            }
-          },
           "parasitt": {
             "type": "boolean"
           }
@@ -225,7 +220,6 @@
           "risikovurdering",
           "beskrivelse",
           "brødtekst",
-          "ingress",
           "parasitt"
         ]
       }
@@ -267,7 +261,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-09T07:47:14.677Z",
+    "produsertUtc": "2019-10-09T10:03:37.838Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
