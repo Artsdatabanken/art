@@ -33,6 +33,9 @@
               },
               "nn": {
                 "type": "string"
+              },
+              "en": {
+                "type": "string"
               }
             }
           },
@@ -261,7 +264,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-09T10:32:37.555Z",
+    "produsertUtc": "2019-10-10T21:26:03.624Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
