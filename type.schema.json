@@ -121,7 +121,7 @@
           "relasjon": {
             "type": "object",
             "properties": {
-              "koloniserte naturtyper": {
+              "Koloniserer<->Er kolonisert av": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -133,25 +133,19 @@
                   "type": "string"
                 }
               },
-              "naturtyper": {
+              "Har effekt på andre arter i": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "trua arter/nøkkelarter": {
+              "Truer<->Trues av": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "øvrige naturtyper": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "andre arter/nøkkelarter": {
+              "har effekt på": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -276,7 +270,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-11T17:51:21.677Z",
+    "produsertUtc": "2019-10-11T22:12:38.147Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
