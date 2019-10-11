@@ -118,23 +118,55 @@
               "type": "string"
             }
           },
-          "risikovurdering": {
+          "relasjon": {
             "type": "object",
             "properties": {
+              "koloniserte naturtyper": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risiko": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "naturtyper": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
+              "trua arter/nøkkelarter": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "øvrige naturtyper": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "andre arter/nøkkelarter": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "risikovurdering": {
+            "type": "object",
+            "properties": {
               "risikonivå": {
                 "type": "object",
                 "properties": {
                   "2012": {
                     "type": "number"
-                  },
-                  "nå": {
-                    "type": "string"
                   },
                   "ved_usikkerhet": {
                     "type": "string"
@@ -159,35 +191,6 @@
                     "type": "number"
                   }
                 }
-              },
-              "arter": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "null"
-                    },
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "string"
-                    }
-                  ],
-                  "type": "string"
-                }
               }
             }
           },
@@ -207,6 +210,14 @@
           },
           "parasitt": {
             "type": "boolean"
+          },
+          "ingress": {
+            "type": "object",
+            "properties": {
+              "nb": {
+                "type": "string"
+              }
+            }
           }
         },
         "required": [
@@ -222,6 +233,7 @@
           "livsmiljø",
           "risikovurdering",
           "beskrivelse",
+          "relasjon",
           "brødtekst",
           "parasitt"
         ]
@@ -264,7 +276,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-10T21:26:03.624Z",
+    "produsertUtc": "2019-10-11T17:51:21.677Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
