@@ -53,6 +53,157 @@
               }
             }
           },
+          "relasjon": {
+            "type": "object",
+            "properties": {
+              "Rødlistekategori<->Art": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Livsmiljø": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Har effekt på andre arter i": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Koloniserer<->Er kolonisert av": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risiko": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "har effekt på": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Truer<->Trues av": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "truetvurdering": {
+            "type": "object",
+            "properties": {
+              "Tolig utdødd": {
+                "type": "string"
+              },
+              "AndelAvEuropeiskBestand": {
+                "type": "string"
+              },
+              "AndelAvGlobalBestand": {
+                "type": "string"
+              },
+              "AndelNåværendeBestand": {
+                "type": "string"
+              },
+              "Kriteriedokumentasjon": {
+                "type": "string"
+              },
+              "ÅrsakTilEndringAvKategori": {
+                "type": "string"
+              },
+              "Fi": {
+                "type": "string"
+              },
+              "Generasjonslengde": {
+                "type": "string"
+              },
+              "He": {
+                "type": "string"
+              },
+              "Hovedhabitat": {
+                "type": "string"
+              },
+              "Kriterier": {
+                "type": "string"
+              },
+              "Påvirkningsfaktorer": {
+                "type": "string"
+              },
+              "No": {
+                "type": "string"
+              },
+              "Tr": {
+                "type": "string"
+              },
+              "Mr": {
+                "type": "string"
+              },
+              "Ro": {
+                "type": "string"
+              },
+              "Sf": {
+                "type": "string"
+              },
+              "Va": {
+                "type": "string"
+              },
+              "Bu": {
+                "type": "string"
+              },
+              "Nt": {
+                "type": "string"
+              },
+              "Ve": {
+                "type": "string"
+              },
+              "Op": {
+                "type": "string"
+              },
+              "St": {
+                "type": "string"
+              },
+              "Te": {
+                "type": "string"
+              },
+              "Aa": {
+                "type": "string"
+              },
+              "Øs": {
+                "type": "string"
+              },
+              "Ho": {
+                "type": "string"
+              },
+              "Sv": {
+                "type": "string"
+              },
+              "Bh": {
+                "type": "string"
+              },
+              "Nh": {
+                "type": "string"
+              },
+              "Po": {
+                "type": "string"
+              },
+              "Sk": {
+                "type": "string"
+              },
+              "No3": {
+                "type": "string"
+              }
+            }
+          },
           "autorkode": {
             "type": "string"
           },
@@ -112,53 +263,6 @@
               }
             }
           },
-          "relasjon": {
-            "type": "object",
-            "properties": {
-              "Koloniserer<->Er kolonisert av": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Livsmiljø": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "risiko": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Rødlistekategori<->Art": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Har effekt på andre arter i": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Truer<->Trues av": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "har effekt på": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "risikovurdering": {
             "type": "object",
             "properties": {
@@ -191,110 +295,6 @@
                     "type": "number"
                   }
                 }
-              }
-            }
-          },
-          "truetvurdering": {
-            "type": "object",
-            "properties": {
-              "AndelAvEuropeiskBestand": {
-                "type": "string"
-              },
-              "AndelAvGlobalBestand": {
-                "type": "string"
-              },
-              "AndelNåværendeBestand": {
-                "type": "string"
-              },
-              "Hovedhabitat": {
-                "type": "string"
-              },
-              "Kriteriedokumentasjon": {
-                "type": "string"
-              },
-              "Kriterier": {
-                "type": "string"
-              },
-              "Påvirkningsfaktorer": {
-                "type": "string"
-              },
-              "Tolig utdødd": {
-                "type": "string"
-              },
-              "Mr": {
-                "type": "string"
-              },
-              "Nt": {
-                "type": "string"
-              },
-              "St": {
-                "type": "string"
-              },
-              "Generasjonslengde": {
-                "type": "string"
-              },
-              "Te": {
-                "type": "string"
-              },
-              "Aa": {
-                "type": "string"
-              },
-              "Ho": {
-                "type": "string"
-              },
-              "Ro": {
-                "type": "string"
-              },
-              "Ve": {
-                "type": "string"
-              },
-              "Øs": {
-                "type": "string"
-              },
-              "ÅrsakTilEndringAvKategori": {
-                "type": "string"
-              },
-              "Bu": {
-                "type": "string"
-              },
-              "Fi": {
-                "type": "string"
-              },
-              "He": {
-                "type": "string"
-              },
-              "Op": {
-                "type": "string"
-              },
-              "No": {
-                "type": "string"
-              },
-              "Va": {
-                "type": "string"
-              },
-              "Tr": {
-                "type": "string"
-              },
-              "Sf": {
-                "type": "string"
-              },
-              "No3": {
-                "type": "string"
-              },
-              "Bh": {
-                "type": "string"
-              },
-              "Nh": {
-                "type": "string"
-              },
-              "Sk": {
-                "type": "string"
-              },
-              "Sv": {
-                "type": "string"
-              },
-              "Po": {
-                "type": "string"
               }
             }
           },
@@ -332,13 +332,13 @@
           "tittel",
           "url",
           "autoritet",
+          "relasjon",
+          "truetvurdering",
           "autorkode",
           "egenskap",
           "lenke",
-          "relasjon",
           "risikovurdering",
           "beskrivelse",
-          "truetvurdering",
           "brødtekst",
           "parasitt",
           "sortering",
@@ -383,7 +383,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-14T10:46:00.979Z",
+    "produsertUtc": "2019-10-14T21:25:24.788Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
