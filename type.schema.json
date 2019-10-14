@@ -133,6 +133,12 @@
                   "type": "string"
                 }
               },
+              "Rødlistekategori<->Art": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "Har effekt på andre arter i": {
                 "type": "array",
                 "items": {
@@ -188,6 +194,110 @@
               }
             }
           },
+          "truetvurdering": {
+            "type": "object",
+            "properties": {
+              "AndelAvEuropeiskBestand": {
+                "type": "string"
+              },
+              "AndelAvGlobalBestand": {
+                "type": "string"
+              },
+              "AndelNåværendeBestand": {
+                "type": "string"
+              },
+              "Hovedhabitat": {
+                "type": "string"
+              },
+              "Kriteriedokumentasjon": {
+                "type": "string"
+              },
+              "Kriterier": {
+                "type": "string"
+              },
+              "Påvirkningsfaktorer": {
+                "type": "string"
+              },
+              "Tolig utdødd": {
+                "type": "string"
+              },
+              "Mr": {
+                "type": "string"
+              },
+              "Nt": {
+                "type": "string"
+              },
+              "St": {
+                "type": "string"
+              },
+              "Generasjonslengde": {
+                "type": "string"
+              },
+              "Te": {
+                "type": "string"
+              },
+              "Aa": {
+                "type": "string"
+              },
+              "Ho": {
+                "type": "string"
+              },
+              "Ro": {
+                "type": "string"
+              },
+              "Ve": {
+                "type": "string"
+              },
+              "Øs": {
+                "type": "string"
+              },
+              "ÅrsakTilEndringAvKategori": {
+                "type": "string"
+              },
+              "Bu": {
+                "type": "string"
+              },
+              "Fi": {
+                "type": "string"
+              },
+              "He": {
+                "type": "string"
+              },
+              "Op": {
+                "type": "string"
+              },
+              "No": {
+                "type": "string"
+              },
+              "Va": {
+                "type": "string"
+              },
+              "Tr": {
+                "type": "string"
+              },
+              "Sf": {
+                "type": "string"
+              },
+              "No3": {
+                "type": "string"
+              },
+              "Bh": {
+                "type": "string"
+              },
+              "Nh": {
+                "type": "string"
+              },
+              "Sk": {
+                "type": "string"
+              },
+              "Sv": {
+                "type": "string"
+              },
+              "Po": {
+                "type": "string"
+              }
+            }
+          },
           "brødtekst": {
             "type": "object",
             "properties": {
@@ -204,6 +314,15 @@
           },
           "parasitt": {
             "type": "boolean"
+          },
+          "farge": {
+            "type": "string"
+          },
+          "infoUrl": {
+            "type": "string"
+          },
+          "sortering": {
+            "type": "number"
           }
         },
         "required": [
@@ -219,8 +338,11 @@
           "relasjon",
           "risikovurdering",
           "beskrivelse",
+          "truetvurdering",
           "brødtekst",
-          "parasitt"
+          "parasitt",
+          "sortering",
+          "farge"
         ]
       }
     },
@@ -261,7 +383,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-14T00:47:01.427Z",
+    "produsertUtc": "2019-10-14T10:46:00.979Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
