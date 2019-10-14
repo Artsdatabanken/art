@@ -204,14 +204,6 @@
           },
           "parasitt": {
             "type": "boolean"
-          },
-          "ingress": {
-            "type": "object",
-            "properties": {
-              "nb": {
-                "type": "string"
-              }
-            }
           }
         },
         "required": [
@@ -269,7 +261,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-14T00:14:23.494Z",
+    "produsertUtc": "2019-10-14T00:47:01.427Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
