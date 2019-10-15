@@ -103,104 +103,209 @@
           "truetvurdering": {
             "type": "object",
             "properties": {
-              "Tolig utdødd": {
-                "type": "string"
+              "norge": {
+                "type": "object",
+                "properties": {
+                  "2010": {
+                    "type": "object",
+                    "properties": {
+                      "kategori": {
+                        "type": "string"
+                      },
+                      "kriterier": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "gjeldende": {
+                    "type": "object",
+                    "properties": {
+                      "A": {
+                        "type": "string"
+                      },
+                      "B": {
+                        "type": "string"
+                      },
+                      "C": {
+                        "type": "string"
+                      },
+                      "D": {
+                        "type": "string"
+                      },
+                      "Tolig utdødd": {
+                        "type": "string"
+                      },
+                      "AndelAvEuropeiskBestand": {
+                        "type": "string"
+                      },
+                      "AndelAvGlobalBestand": {
+                        "type": "string"
+                      },
+                      "AndelNåværendeBestand": {
+                        "type": "string"
+                      },
+                      "Kriteriedokumentasjon": {
+                        "type": "string"
+                      },
+                      "ÅrsakTilEndringAvKategori": {
+                        "type": "string"
+                      },
+                      "Fi": {
+                        "type": "string"
+                      },
+                      "Generasjonslengde": {
+                        "type": "string"
+                      },
+                      "He": {
+                        "type": "string"
+                      },
+                      "Hovedhabitat": {
+                        "type": "string"
+                      },
+                      "Kriterier": {
+                        "type": "string"
+                      },
+                      "Oa": {
+                        "type": "string"
+                      },
+                      "Påvirkningsfaktorer": {
+                        "type": "string"
+                      },
+                      "No": {
+                        "type": "string"
+                      },
+                      "Tr": {
+                        "type": "string"
+                      },
+                      "Mr": {
+                        "type": "string"
+                      },
+                      "Ro": {
+                        "type": "string"
+                      },
+                      "Sf": {
+                        "type": "string"
+                      },
+                      "Va": {
+                        "type": "string"
+                      },
+                      "Bu": {
+                        "type": "string"
+                      },
+                      "Nt": {
+                        "type": "string"
+                      },
+                      "Ve": {
+                        "type": "string"
+                      },
+                      "Op": {
+                        "type": "string"
+                      },
+                      "St": {
+                        "type": "string"
+                      },
+                      "Te": {
+                        "type": "string"
+                      },
+                      "Aa": {
+                        "type": "string"
+                      },
+                      "Øs": {
+                        "type": "string"
+                      },
+                      "Ho": {
+                        "type": "string"
+                      },
+                      "Sv": {
+                        "type": "string"
+                      },
+                      "Bh": {
+                        "type": "string"
+                      },
+                      "Nh": {
+                        "type": "string"
+                      },
+                      "Po": {
+                        "type": "string"
+                      },
+                      "Sk": {
+                        "type": "string"
+                      },
+                      "No3": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
               },
-              "AndelAvEuropeiskBestand": {
-                "type": "string"
-              },
-              "AndelAvGlobalBestand": {
-                "type": "string"
-              },
-              "AndelNåværendeBestand": {
-                "type": "string"
-              },
-              "Kriteriedokumentasjon": {
-                "type": "string"
-              },
-              "ÅrsakTilEndringAvKategori": {
-                "type": "string"
-              },
-              "Fi": {
-                "type": "string"
-              },
-              "Generasjonslengde": {
-                "type": "string"
-              },
-              "He": {
-                "type": "string"
-              },
-              "Hovedhabitat": {
-                "type": "string"
-              },
-              "Kriterier": {
-                "type": "string"
-              },
-              "Påvirkningsfaktorer": {
-                "type": "string"
-              },
-              "No": {
-                "type": "string"
-              },
-              "Tr": {
-                "type": "string"
-              },
-              "Mr": {
-                "type": "string"
-              },
-              "Ro": {
-                "type": "string"
-              },
-              "Sf": {
-                "type": "string"
-              },
-              "Va": {
-                "type": "string"
-              },
-              "Bu": {
-                "type": "string"
-              },
-              "Nt": {
-                "type": "string"
-              },
-              "Ve": {
-                "type": "string"
-              },
-              "Op": {
-                "type": "string"
-              },
-              "St": {
-                "type": "string"
-              },
-              "Te": {
-                "type": "string"
-              },
-              "Aa": {
-                "type": "string"
-              },
-              "Øs": {
-                "type": "string"
-              },
-              "Ho": {
-                "type": "string"
-              },
-              "Sv": {
-                "type": "string"
-              },
-              "Bh": {
-                "type": "string"
-              },
-              "Nh": {
-                "type": "string"
-              },
-              "Po": {
-                "type": "string"
-              },
-              "Sk": {
-                "type": "string"
-              },
-              "No3": {
-                "type": "string"
+              "svalbard": {
+                "type": "object",
+                "properties": {
+                  "2010": {
+                    "type": "object",
+                    "properties": {
+                      "kategori": {
+                        "type": "string"
+                      },
+                      "kriterier": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "gjeldende": {
+                    "type": "object",
+                    "properties": {
+                      "A": {
+                        "type": "string"
+                      },
+                      "B": {
+                        "type": "string"
+                      },
+                      "C": {
+                        "type": "string"
+                      },
+                      "D": {
+                        "type": "string"
+                      },
+                      "Tolig utdødd": {
+                        "type": "string"
+                      },
+                      "ÅrsakTilEndringAvKategori": {
+                        "type": "string"
+                      },
+                      "AndelAvEuropeiskBestand": {
+                        "type": "string"
+                      },
+                      "AndelAvGlobalBestand": {
+                        "type": "string"
+                      },
+                      "AndelNåværendeBestand": {
+                        "type": "string"
+                      },
+                      "Generasjonslengde": {
+                        "type": "string"
+                      },
+                      "Hovedhabitat": {
+                        "type": "string"
+                      },
+                      "Kriteriedokumentasjon": {
+                        "type": "string"
+                      },
+                      "Sv": {
+                        "type": "string"
+                      },
+                      "Kriterier": {
+                        "type": "string"
+                      },
+                      "Påvirkningsfaktorer": {
+                        "type": "string"
+                      },
+                      "Po": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
               }
             }
           },
@@ -383,7 +488,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-14T21:25:24.788Z",
+    "produsertUtc": "2019-10-15T15:16:56.041Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
