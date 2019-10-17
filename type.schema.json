@@ -85,6 +85,17 @@
               }
             }
           },
+          "lenke": {
+            "type": "object",
+            "properties": {
+              "rødliste_2015": {
+                "type": "string"
+              },
+              "fab": {
+                "type": "string"
+              }
+            }
+          },
           "relasjon": {
             "type": "object",
             "properties": {
@@ -185,7 +196,7 @@
                       "D": {
                         "type": "string"
                       },
-                      "Tolig utdødd": {
+                      "Trolig utdødd": {
                         "type": "string"
                       },
                       "kategori": {
@@ -294,14 +305,6 @@
                         "type": "string"
                       }
                     }
-                  },
-                  "lenke": {
-                    "type": "object",
-                    "properties": {
-                      "rødliste": {
-                        "type": "string"
-                      }
-                    }
                   }
                 }
               },
@@ -337,11 +340,19 @@
                       "D": {
                         "type": "string"
                       },
-                      "Tolig utdødd": {
+                      "Trolig utdødd": {
                         "type": "string"
                       },
                       "kategori": {
                         "type": "string"
+                      },
+                      "lenke": {
+                        "type": "object",
+                        "properties": {
+                          "rødliste_2015": {
+                            "type": "string"
+                          }
+                        }
                       },
                       "ÅrsakTilEndringAvKategori": {
                         "type": "string"
@@ -377,14 +388,6 @@
                         "type": "string"
                       },
                       "Po": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "lenke": {
-                    "type": "object",
-                    "properties": {
-                      "rødliste": {
                         "type": "string"
                       }
                     }
@@ -441,14 +444,6 @@
                     "type": "boolean"
                   }
                 }
-              }
-            }
-          },
-          "lenke": {
-            "type": "object",
-            "properties": {
-              "fab": {
-                "type": "string"
               }
             }
           },
@@ -1130,11 +1125,11 @@
           "tittel",
           "url",
           "autoritet",
+          "lenke",
           "relasjon",
           "truetvurdering",
           "autorkode",
           "egenskap",
-          "lenke",
           "risikovurdering",
           "beskrivelse",
           "blomstringstid",
@@ -1206,7 +1201,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-17T13:51:41.292Z",
+    "produsertUtc": "2019-10-17T23:30:31.461Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
