@@ -129,6 +129,18 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "Lever på<->Er vert for": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Spiser<->Bliir spist av": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -1045,20 +1057,12 @@
             }
           },
           "vert": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "object",
+            "properties": {}
           },
           "diett": {
             "type": "object",
             "properties": {
-              "art": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "tekst": {
                 "type": "object",
                 "properties": {
@@ -1183,7 +1187,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-17T12:30:20.735Z",
+    "produsertUtc": "2019-10-17T13:04:55.889Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
