@@ -482,6 +482,17 @@
               }
             }
           },
+          "synonym": {
+            "type": "object",
+            "properties": {
+              "sn": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "blomstringstid": {
             "type": "array",
             "items": {
@@ -1130,6 +1141,7 @@
           "truetvurdering",
           "autorkode",
           "egenskap",
+          "synonym",
           "risikovurdering",
           "beskrivelse",
           "blomstringstid",
@@ -1159,8 +1171,8 @@
           "vert",
           "diett",
           "sykdom",
-          "sortering",
-          "farge"
+          "farge",
+          "sortering"
         ]
       }
     },
@@ -1201,7 +1213,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-17T23:30:31.461Z",
+    "produsertUtc": "2019-10-18T16:06:32.074Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
