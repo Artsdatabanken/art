@@ -85,6 +85,12 @@
               }
             }
           },
+          "finnesINorge": {
+            "type": "boolean"
+          },
+          "kodeautor": {
+            "type": "string"
+          },
           "lenke": {
             "type": "object",
             "properties": {
@@ -153,7 +159,7 @@
                   "type": "string"
                 }
               },
-              "Spiser<->Bliir spist av": {
+              "Spiser<->Blir spist av": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -220,13 +226,7 @@
                       "ÅrsakTilEndringAvKategori": {
                         "type": "string"
                       },
-                      "Fi": {
-                        "type": "string"
-                      },
                       "Generasjonslengde": {
-                        "type": "string"
-                      },
-                      "He": {
                         "type": "string"
                       },
                       "Hovedhabitat": {
@@ -235,59 +235,25 @@
                       "Kriterier": {
                         "type": "string"
                       },
-                      "Oa": {
-                        "type": "string"
-                      },
                       "Påvirkningsfaktorer": {
                         "type": "string"
                       },
-                      "No": {
-                        "type": "string"
-                      },
-                      "Tr": {
-                        "type": "string"
-                      },
-                      "Mr": {
-                        "type": "string"
-                      },
-                      "Ro": {
-                        "type": "string"
-                      },
-                      "Sf": {
-                        "type": "string"
-                      },
-                      "Va": {
-                        "type": "string"
-                      },
-                      "Bu": {
-                        "type": "string"
-                      },
-                      "Nt": {
-                        "type": "string"
-                      },
-                      "Ve": {
-                        "type": "string"
-                      },
-                      "Op": {
-                        "type": "string"
-                      },
-                      "St": {
-                        "type": "string"
-                      },
-                      "Te": {
-                        "type": "string"
-                      },
-                      "Aa": {
-                        "type": "string"
-                      },
-                      "Øs": {
-                        "type": "string"
-                      },
-                      "Ho": {
-                        "type": "string"
-                      },
-                      "Sv": {
-                        "type": "string"
+                      "utbredelse": {
+                        "type": "object",
+                        "properties": {
+                          "sikker": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "usikker": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
                       },
                       "Bh": {
                         "type": "string"
@@ -378,8 +344,22 @@
                       "Kriteriedokumentasjon": {
                         "type": "string"
                       },
-                      "Sv": {
-                        "type": "string"
+                      "utbredelse": {
+                        "type": "object",
+                        "properties": {
+                          "sikker": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "usikker": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
                       },
                       "Kriterier": {
                         "type": "string"
@@ -416,32 +396,69 @@
               }
             }
           },
-          "egenskap": {
+          "norsk bestand": {
             "type": "object",
             "properties": {
-              "reproduksjon": {
+              "sted": {
+                "type": [
+                  "string",
+                  "number"
+                ]
+              }
+            }
+          },
+          "reproduksjon": {
+            "type": "object",
+            "properties": {
+              "generasjonstid": {
+                "type": "number"
+              },
+              "seksuell": {
+                "type": "boolean"
+              },
+              "aseksuell": {
+                "type": "boolean"
+              },
+              "livssyklus": {
                 "type": "object",
                 "properties": {
-                  "først observert": {
-                    "type": [
-                      "number",
-                      "string"
-                    ]
-                  },
-                  "generasjonstid": {
-                    "type": "number"
-                  },
-                  "norsk bestand": {
-                    "type": [
-                      "number",
-                      "string"
-                    ]
-                  },
-                  "seksuell": {
-                    "type": "boolean"
-                  },
-                  "aseksuell": {
-                    "type": "boolean"
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "hybridisering": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "flyvetid": {
+                "type": [
+                  "object",
+                  "string"
+                ],
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "beskrivelse": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "egg": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
                   }
                 }
               }
@@ -489,6 +506,314 @@
                 "type": "array",
                 "items": {
                   "type": "string"
+                }
+              }
+            }
+          },
+          "utbredelse": {
+            "type": "object",
+            "properties": {
+              "andel i sterkt endra natur (%)": {
+                "type": "number"
+              },
+              "areal": {
+                "type": "number"
+              },
+              "forekomstområde": {
+                "type": "object",
+                "properties": {
+                  "areal": {
+                    "type": "object",
+                    "properties": {
+                      "antatt": {
+                        "type": "number"
+                      },
+                      "kjent": {
+                        "type": "number"
+                      },
+                      "potensielt": {
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "mørketall": {
+                    "type": "number"
+                  }
+                }
+              },
+              "geo variasjon": {
+                "type": "object",
+                "properties": {
+                  "reproduksjonsevne": {
+                    "type": "boolean"
+                  },
+                  "økologisk eff. begrensa til klimasoner": {
+                    "type": "boolean"
+                  },
+                  "økologisk eff. begrensa til naturtyper": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "global": {
+                "type": "object",
+                "properties": {
+                  "naturlig": {
+                    "type": "object",
+                    "properties": {
+                      "tropic": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_unspecified": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "temperate_nemoral": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_dry": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "temperate_boreal": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "temperate_dry": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "polar": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_mediterranean": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_highlands": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "unknown": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_humid": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_caperegion": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "marint": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "nåværende": {
+                    "type": "object",
+                    "properties": {
+                      "subtropic_unspecified": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "temperate_nemoral": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "tropic": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_mediterranean": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_dry": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "temperate_boreal": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "temperate_dry": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "polar": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_humid": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_caperegion": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subtropic_highlands": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "unknown": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "marint": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "norge": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  },
+                  "nåværende": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "tidslinje": {
+                "type": "object",
+                "properties": {
+                  "etablert_bestand": {
+                    "type": [
+                      "number",
+                      "string"
+                    ]
+                  },
+                  "først_observert": {
+                    "type": [
+                      "number",
+                      "string"
+                    ]
+                  }
+                }
+              },
+              "midt-norge": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "beskrivelse": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "økologi_livssyklus": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "økologi_utbredelse": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "forekomststatus": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "nær_norge": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
+                }
+              },
+              "globalt": {
+                "type": "object",
+                "properties": {
+                  "nob": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -733,83 +1058,6 @@
               }
             }
           },
-          "utbredelse": {
-            "type": "object",
-            "properties": {
-              "midt-norge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "beskrivelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "norge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "økologi_livssyklus": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "økologi_utbredelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "global": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "forekomststatus": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "nær_norge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "globalt": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
           "systematikk": {
             "type": "object",
             "properties": {
@@ -943,54 +1191,6 @@
                 ],
                 "items": {
                   "type": "string"
-                }
-              }
-            }
-          },
-          "reproduksjon": {
-            "type": "object",
-            "properties": {
-              "livssyklus": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "hybridisering": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "flyvetid": {
-                "type": [
-                  "object",
-                  "string"
-                ],
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "beskrivelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "egg": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
                 }
               }
             }
@@ -1136,23 +1336,25 @@
           "tittel",
           "url",
           "autoritet",
+          "finnesINorge",
+          "kodeautor",
           "lenke",
           "relasjon",
           "truetvurdering",
           "autorkode",
-          "egenskap",
+          "reproduksjon",
           "synonym",
+          "utbredelse",
           "risikovurdering",
           "beskrivelse",
+          "norsk bestand",
           "blomstringstid",
           "habitat",
           "morfologi",
           "tradisjonell_bruk",
-          "utbredelse",
           "systematikk",
           "0",
           "1",
-          "reproduksjon",
           "brødtekst",
           "økologi",
           "body",
@@ -1213,7 +1415,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-10-18T16:06:32.074Z",
+    "produsertUtc": "2019-11-11T11:24:36.012Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
