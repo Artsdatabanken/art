@@ -36,6 +36,9 @@
           "6": {
             "type": "string"
           },
+          "finnesINorge": {
+            "type": "boolean"
+          },
           "foreldre": {
             "type": "array",
             "items": {
@@ -84,9 +87,6 @@
                 "type": "number"
               }
             }
-          },
-          "finnesINorge": {
-            "type": "boolean"
           },
           "kodeautor": {
             "type": "string"
@@ -478,14 +478,6 @@
                   }
                 }
               },
-              "kriterie": {
-                "type": "object",
-                "properties": {
-                  "utenfor definisjon": {
-                    "type": "string"
-                  }
-                }
-              },
               "overføring andre arter": {
                 "type": "object",
                 "properties": {
@@ -494,6 +486,14 @@
                   },
                   "parasitter/patogener": {
                     "type": "number"
+                  }
+                }
+              },
+              "kriterie": {
+                "type": "object",
+                "properties": {
+                  "utenfor definisjon": {
+                    "type": "string"
                   }
                 }
               }
@@ -800,7 +800,7 @@
                   }
                 }
               },
-              "nær_norge": {
+              "globalt": {
                 "type": "object",
                 "properties": {
                   "nob": {
@@ -808,7 +808,7 @@
                   }
                 }
               },
-              "globalt": {
+              "nær_norge": {
                 "type": "object",
                 "properties": {
                   "nob": {
@@ -828,14 +828,6 @@
             "type": "object",
             "properties": {
               "voksested": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "biologi": {
                 "type": "object",
                 "properties": {
                   "nob": {
@@ -1214,16 +1206,16 @@
           "body": {
             "type": "string"
           },
-          "referanse": {
+          "missingNode": {
+            "type": "string"
+          },
+          "biologi": {
             "type": "object",
             "properties": {
               "nob": {
                 "type": "string"
               }
             }
-          },
-          "missingNode": {
-            "type": "string"
           },
           "sang": {
             "type": "object",
@@ -1279,6 +1271,14 @@
               }
             }
           },
+          "referanse": {
+            "type": "object",
+            "properties": {
+              "nob": {
+                "type": "string"
+              }
+            }
+          },
           "diett": {
             "type": "object",
             "properties": {
@@ -1330,13 +1330,13 @@
           }
         },
         "required": [
+          "finnesINorge",
           "foreldre",
           "kode",
           "nivå",
           "tittel",
           "url",
           "autoritet",
-          "finnesINorge",
           "kodeautor",
           "lenke",
           "relasjon",
@@ -1345,9 +1345,9 @@
           "reproduksjon",
           "synonym",
           "utbredelse",
-          "risikovurdering",
           "beskrivelse",
           "norsk bestand",
+          "risikovurdering",
           "blomstringstid",
           "habitat",
           "morfologi",
@@ -1358,10 +1358,10 @@
           "brødtekst",
           "økologi",
           "body",
-          "referanse",
           "2",
           "kommentar",
           "3",
+          "biologi",
           "sang",
           "literal",
           "missingNode",
@@ -1415,7 +1415,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-11-11T11:24:36.012Z",
+    "produsertUtc": "2019-11-26T02:43:27.179Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
