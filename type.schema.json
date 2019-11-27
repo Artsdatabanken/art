@@ -37,13 +37,8 @@
               "nn": {
                 "type": "string"
               },
-              "dialekt": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
+              "dia": {
+                "type": "string"
               },
               "en": {
                 "type": "string"
@@ -1372,7 +1367,7 @@
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-11-26T23:22:42.395Z",
+    "produsertUtc": "2019-11-27T07:56:22.958Z",
     "utgiver": "Artsdatabanken",
     "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
     "tool": {
