@@ -1,1378 +1,1964 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "properties": {
-    "items": {
-      "type": "array",
+  "items": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+      "$schema": {
+        "type": "string"
+      },
       "items": {
-        "type": "object",
-        "properties": {
-          "finnesINorge": {
-            "type": "boolean"
-          },
-          "foreldre": {
-            "type": "array",
-            "items": {
+        "items": {
+          "properties": {
+            "autoritet": {
+              "properties": {
+                "navn": {
+                  "type": "string"
+                },
+                "år": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "autorkode": {
               "type": "string"
-            }
-          },
-          "kode": {
-            "type": "string"
-          },
-          "nivå": {
-            "type": "string"
-          },
-          "tittel": {
-            "type": "object",
-            "properties": {
-              "nb": {
+            },
+            "beskrivelse": {
+              "properties": {
+                "eng": {
+                  "type": "string"
+                },
+                "nb": {
+                  "type": "string"
+                },
+                "nn": {
+                  "type": "string"
+                },
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "biologi": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "blomstringstid": {
+              "items": {
                 "type": "string"
               },
-              "sn": {
+              "type": "array"
+            },
+            "body": {
+              "properties": {
+                "eng": {
+                  "type": "string"
+                },
+                "nn": {
+                  "type": "string"
+                },
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "diett": {
+              "properties": {
+                "tekst": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "farge": {
+              "type": "string"
+            },
+            "finnesINorge": {
+              "type": "boolean"
+            },
+            "foreldre": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "fysiologi": {
+              "properties": {
+                "indre organer": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "silke": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "habitat": {
+              "properties": {
+                "levesett": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "levested": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "voksested": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "import": {
+              "properties": {
+                "description": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "infoUrl": {
+              "type": "string"
+            },
+            "kode": {
+              "type": "string"
+            },
+            "kodeautor": {
+              "type": "string"
+            },
+            "kommentar": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "lenke": {
+              "properties": {
+                "arterpånett": {
+                  "type": "string"
+                },
+                "fab": {
+                  "type": "string"
+                },
+                "rødliste_2015": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "literal": {
+              "properties": {
+                "Alias": {
+                  "properties": {
+                    "nob": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": [
+                        "array",
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "morfologi": {
+              "properties": {
+                "anatomi": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "beskrivelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "farge": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "gift": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "kjemi": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "kjennetegn": {
+                  "properties": {
+                    "beskrivelse": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "mikroskopisk": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "klekking": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "kromosomtall": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "kroppsbygning": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "kroppsdel": {
+                  "properties": {
+                    "kropp": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "skall": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "larve": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "sporefarge": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "struktur_oppbygging": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "størrelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "tannformel": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "unge_stadier": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "utseende": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "variasjon": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "vingespenn": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ytre_bygning": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "nivå": {
+              "type": "string"
+            },
+            "norsk bestand": {
+              "properties": {
+                "sted": {
+                  "type": [
+                    "string",
+                    "number"
+                  ]
+                }
+              },
+              "type": "object"
+            },
+            "parasitt": {
+              "type": "boolean"
+            },
+            "predator": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "referanse": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "relasjon": {
+              "properties": {
+                "Har effekt på andre arter i": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "Kan forveksles med<->Kan forveksles med": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "Koloniserer<->Er kolonisert av": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "Lever på<->Er vert for": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "Livsmiljø": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "Rødlistekategori<->Art": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "Truer<->Trues av": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "har effekt på": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "risiko": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "reproduksjon": {
+              "properties": {
+                "aseksuell": {
+                  "type": "boolean"
+                },
+                "beskrivelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "egg": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "flyvetid": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "generasjonstid": {
+                  "type": "number"
+                },
+                "hybridisering": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "livssyklus": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "seksuell": {
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            },
+            "risikovurdering": {
+              "properties": {
+                "kriterie": {
+                  "properties": {
+                    "utenfor definisjon": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "overføring andre arter": {
+                  "properties": {
+                    "genetisk materiale": {
+                      "type": "number"
+                    },
+                    "parasitter/patogener": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "risikonivå": {
+                  "properties": {
+                    "2012": {
+                      "type": "number"
+                    },
+                    "ved_usikkerhet": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "samarbeidspartnere": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "sang": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "sortering": {
+              "type": "number"
+            },
+            "sykdom": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "synonym": {
+              "properties": {
+                "sn": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "systematikk": {
+              "properties": {
+                "antall": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "artsbestemmelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "forveksling": {
+                  "properties": {
+                    "art": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "beskrivelse": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "geografi": {
+                  "properties": {
+                    "norden": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "inndeling": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "navngivning": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "nob": {
+                  "type": "string"
+                },
+                "taksonomi": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "underart": {
+                  "properties": {
+                    "beskrivelse": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "karakteristisk": {
+                      "properties": {
+                        "nob": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "videre_bestemmelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "template": {
+              "items": {
+                "type": "string"
+              },
+              "type": [
+                "array",
+                "string"
+              ]
+            },
+            "tittel": {
+              "properties": {
+                "dia": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                },
+                "nb": {
+                  "type": "string"
+                },
+                "nn": {
+                  "type": "string"
+                },
+                "sci": {
+                  "type": "string"
+                },
+                "sn": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "tradisjonell_bruk": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "truetvurdering": {
+              "properties": {
+                "norge": {
+                  "properties": {
+                    "2010": {
+                      "properties": {
+                        "kategori": {
+                          "type": "string"
+                        },
+                        "kriterier": {
+                          "type": "string"
+                        },
+                        "år": {
+                          "type": "number"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "gjeldende": {
+                      "properties": {
+                        "A": {
+                          "type": "string"
+                        },
+                        "AndelAvEuropeiskBestand": {
+                          "type": "string"
+                        },
+                        "AndelAvGlobalBestand": {
+                          "type": "string"
+                        },
+                        "AndelNåværendeBestand": {
+                          "type": "string"
+                        },
+                        "B": {
+                          "type": "string"
+                        },
+                        "Bh": {
+                          "type": "string"
+                        },
+                        "C": {
+                          "type": "string"
+                        },
+                        "D": {
+                          "type": "string"
+                        },
+                        "Generasjonslengde": {
+                          "type": "string"
+                        },
+                        "Hovedhabitat": {
+                          "type": "string"
+                        },
+                        "Kriteriedokumentasjon": {
+                          "type": "string"
+                        },
+                        "Kriterier": {
+                          "type": "string"
+                        },
+                        "Nh": {
+                          "type": "string"
+                        },
+                        "No3": {
+                          "type": "string"
+                        },
+                        "Po": {
+                          "type": "string"
+                        },
+                        "Påvirkningsfaktorer": {
+                          "type": "string"
+                        },
+                        "Sk": {
+                          "type": "string"
+                        },
+                        "Trolig utdødd": {
+                          "type": "string"
+                        },
+                        "kategori": {
+                          "type": "string"
+                        },
+                        "utbredelse": {
+                          "properties": {
+                            "sikker": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "usikker": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "ÅrsakTilEndringAvKategori": {
+                          "type": "string"
+                        },
+                        "år": {
+                          "type": "number"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "svalbard": {
+                  "properties": {
+                    "2010": {
+                      "properties": {
+                        "kategori": {
+                          "type": "string"
+                        },
+                        "kriterier": {
+                          "type": "string"
+                        },
+                        "år": {
+                          "type": "number"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "gjeldende": {
+                      "properties": {
+                        "A": {
+                          "type": "string"
+                        },
+                        "AndelAvEuropeiskBestand": {
+                          "type": "string"
+                        },
+                        "AndelAvGlobalBestand": {
+                          "type": "string"
+                        },
+                        "AndelNåværendeBestand": {
+                          "type": "string"
+                        },
+                        "B": {
+                          "type": "string"
+                        },
+                        "C": {
+                          "type": "string"
+                        },
+                        "D": {
+                          "type": "string"
+                        },
+                        "Generasjonslengde": {
+                          "type": "string"
+                        },
+                        "Hovedhabitat": {
+                          "type": "string"
+                        },
+                        "Kriteriedokumentasjon": {
+                          "type": "string"
+                        },
+                        "Kriterier": {
+                          "type": "string"
+                        },
+                        "Po": {
+                          "type": "string"
+                        },
+                        "Påvirkningsfaktorer": {
+                          "type": "string"
+                        },
+                        "Trolig utdødd": {
+                          "type": "string"
+                        },
+                        "kategori": {
+                          "type": "string"
+                        },
+                        "lenke": {
+                          "properties": {
+                            "rødliste_2015": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "utbredelse": {
+                          "properties": {
+                            "sikker": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "usikker": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "ÅrsakTilEndringAvKategori": {
+                          "type": "string"
+                        },
+                        "år": {
+                          "type": "number"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "url": {
+              "type": "string"
+            },
+            "utbredelse": {
+              "properties": {
+                "andel i sterkt endra natur (%)": {
+                  "type": "number"
+                },
+                "areal": {
+                  "type": "number"
+                },
+                "beskrivelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "forekomstområde": {
+                  "properties": {
+                    "areal": {
+                      "properties": {
+                        "antatt": {
+                          "type": "number"
+                        },
+                        "kjent": {
+                          "type": "number"
+                        },
+                        "potensielt": {
+                          "type": "number"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "mørketall": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "forekomststatus": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "geo variasjon": {
+                  "properties": {
+                    "reproduksjonsevne": {
+                      "type": "boolean"
+                    },
+                    "økologisk eff. begrensa til klimasoner": {
+                      "type": "boolean"
+                    },
+                    "økologisk eff. begrensa til naturtyper": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "global": {
+                  "properties": {
+                    "naturlig": {
+                      "properties": {
+                        "marint": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "polar": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_caperegion": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_dry": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_highlands": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_humid": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_mediterranean": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_unspecified": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "temperate_boreal": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "temperate_dry": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "temperate_nemoral": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "tropic": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "unknown": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "nob": {
+                      "type": "string"
+                    },
+                    "nåværende": {
+                      "properties": {
+                        "marint": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "polar": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_caperegion": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_dry": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_highlands": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_humid": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_mediterranean": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "subtropic_unspecified": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "temperate_boreal": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "temperate_dry": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "temperate_nemoral": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "tropic": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "unknown": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "globalt": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "midt-norge": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "norge": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    },
+                    "nåværende": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "nær_norge": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "tidslinje": {
+                  "properties": {
+                    "etablert_bestand": {
+                      "type": [
+                        "number",
+                        "string"
+                      ]
+                    },
+                    "først_observert": {
+                      "type": [
+                        "number",
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "økologi_livssyklus": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "økologi_utbredelse": {
+                  "properties": {
+                    "nob": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "vert": {
+              "properties": {
+                "art": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "økologi": {
+              "properties": {
+                "nob": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "required": [
+            "finnesINorge",
+            "foreldre",
+            "kode",
+            "nivå",
+            "tittel",
+            "url",
+            "autoritet",
+            "kodeautor",
+            "lenke",
+            "relasjon",
+            "truetvurdering",
+            "autorkode",
+            "reproduksjon",
+            "synonym",
+            "utbredelse",
+            "beskrivelse",
+            "norsk bestand",
+            "risikovurdering",
+            "blomstringstid",
+            "habitat",
+            "morfologi",
+            "tradisjonell_bruk",
+            "systematikk",
+            "body",
+            "økologi",
+            "kommentar",
+            "biologi",
+            "sang",
+            "literal",
+            "parasitt",
+            "import",
+            "samarbeidspartnere",
+            "vert",
+            "sykdom",
+            "diett",
+            "template",
+            "farge",
+            "sortering"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "meta": {
+        "properties": {
+          "elementer": {
+            "type": "number"
+          },
+          "produsertUtc": {
+            "type": "string"
+          },
+          "source": {
+            "items": {
+              "properties": {
+                "elementer": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "produsertUtc": {
+                  "type": "string"
+                },
+                "source": {
+                  "items": {
+                    "properties": {
+                      "elementer": {
+                        "type": "number"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "produsertUtc": {
+                        "type": "string"
+                      },
+                      "source": {
+                        "items": {
+                          "properties": {
+                            "elementer": {
+                              "type": "number"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "produsertUtc": {
+                              "type": "string"
+                            },
+                            "source": {
+                              "items": {
+                                "properties": {
+                                  "elementer": {
+                                    "type": "number"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "produsertUtc": {
+                                    "type": "string"
+                                  },
+                                  "source": {
+                                    "items": {
+                                      "properties": {
+                                        "elementer": {
+                                          "type": "number"
+                                        },
+                                        "name": {
+                                          "type": "string"
+                                        },
+                                        "produsertUtc": {
+                                          "type": "string"
+                                        },
+                                        "source": {
+                                          "items": {
+                                            "properties": {
+                                              "name": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "name"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          "type": "array"
+                                        },
+                                        "tittel": {
+                                          "type": "string"
+                                        },
+                                        "tool": {
+                                          "properties": {
+                                            "commit": {
+                                              "type": "string"
+                                            },
+                                            "name": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "type": "object"
+                                        },
+                                        "url": {
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ]
+                                        },
+                                        "utgiver": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "name",
+                                        "tittel",
+                                        "produsertUtc",
+                                        "utgiver",
+                                        "url",
+                                        "tool",
+                                        "elementer",
+                                        "source"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "tittel": {
+                                    "type": "string"
+                                  },
+                                  "tool": {
+                                    "properties": {
+                                      "commit": {
+                                        "type": "string"
+                                      },
+                                      "name": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "type": "object"
+                                  },
+                                  "url": {
+                                    "type": "null"
+                                  },
+                                  "utgiver": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "tittel",
+                                  "produsertUtc",
+                                  "utgiver",
+                                  "url",
+                                  "tool",
+                                  "elementer",
+                                  "source"
+                                ],
+                                "type": "object"
+                              },
+                              "type": "array"
+                            },
+                            "tittel": {
+                              "type": "string"
+                            },
+                            "tool": {
+                              "properties": {
+                                "commit": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "url": {
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            },
+                            "utgiver": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "tittel",
+                            "produsertUtc",
+                            "utgiver",
+                            "url",
+                            "tool",
+                            "elementer",
+                            "source"
+                          ],
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "tittel": {
+                        "type": "string"
+                      },
+                      "tool": {
+                        "properties": {
+                          "commit": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "url": {
+                        "type": [
+                          "null",
+                          "string"
+                        ]
+                      },
+                      "utgiver": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "tittel",
+                      "produsertUtc",
+                      "utgiver",
+                      "url",
+                      "tool",
+                      "elementer",
+                      "source"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "tittel": {
+                  "type": "string"
+                },
+                "tool": {
+                  "properties": {
+                    "commit": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "utgiver": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "tittel",
+                "produsertUtc",
+                "utgiver",
+                "url",
+                "tool",
+                "elementer",
+                "source"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "tittel": {
+            "type": "string"
+          },
+          "tool": {
+            "properties": {
+              "commit": {
+                "type": "string"
+              },
+              "name": {
                 "type": "string"
               },
               "url": {
-                "type": "string"
-              },
-              "nn": {
-                "type": "string"
-              },
-              "dia": {
-                "type": "string"
-              },
-              "en": {
-                "type": "string"
+                "type": "null"
               }
-            }
+            },
+            "type": "object"
           },
           "url": {
             "type": "string"
           },
-          "autoritet": {
-            "type": "object",
-            "properties": {
-              "navn": {
-                "type": "string"
-              },
-              "år": {
-                "type": "number"
-              }
-            }
-          },
-          "kodeautor": {
+          "utgiver": {
             "type": "string"
-          },
-          "lenke": {
-            "type": "object",
-            "properties": {
-              "rødliste_2015": {
-                "type": "string"
-              },
-              "fab": {
-                "type": "string"
-              }
-            }
-          },
-          "relasjon": {
-            "type": "object",
-            "properties": {
-              "Rødlistekategori<->Art": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Koloniserer<->Er kolonisert av": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Livsmiljø": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "risiko": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Har effekt på andre arter i": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Truer<->Trues av": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "har effekt på": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Kan forveksles med<->Kan forveksles med": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Lever på<->Er vert for": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "truetvurdering": {
-            "type": "object",
-            "properties": {
-              "norge": {
-                "type": "object",
-                "properties": {
-                  "2010": {
-                    "type": "object",
-                    "properties": {
-                      "kategori": {
-                        "type": "string"
-                      },
-                      "år": {
-                        "type": "number"
-                      },
-                      "kriterier": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "gjeldende": {
-                    "type": "object",
-                    "properties": {
-                      "A": {
-                        "type": "string"
-                      },
-                      "B": {
-                        "type": "string"
-                      },
-                      "C": {
-                        "type": "string"
-                      },
-                      "D": {
-                        "type": "string"
-                      },
-                      "Trolig utdødd": {
-                        "type": "string"
-                      },
-                      "kategori": {
-                        "type": "string"
-                      },
-                      "år": {
-                        "type": "number"
-                      },
-                      "AndelAvEuropeiskBestand": {
-                        "type": "string"
-                      },
-                      "AndelAvGlobalBestand": {
-                        "type": "string"
-                      },
-                      "AndelNåværendeBestand": {
-                        "type": "string"
-                      },
-                      "Kriteriedokumentasjon": {
-                        "type": "string"
-                      },
-                      "ÅrsakTilEndringAvKategori": {
-                        "type": "string"
-                      },
-                      "Generasjonslengde": {
-                        "type": "string"
-                      },
-                      "Hovedhabitat": {
-                        "type": "string"
-                      },
-                      "Kriterier": {
-                        "type": "string"
-                      },
-                      "Påvirkningsfaktorer": {
-                        "type": "string"
-                      },
-                      "utbredelse": {
-                        "type": "object",
-                        "properties": {
-                          "sikker": {
-                            "type": "array",
-                            "items": {
-                              "type": "string"
-                            }
-                          },
-                          "usikker": {
-                            "type": "array",
-                            "items": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      },
-                      "Bh": {
-                        "type": "string"
-                      },
-                      "Nh": {
-                        "type": "string"
-                      },
-                      "Po": {
-                        "type": "string"
-                      },
-                      "Sk": {
-                        "type": "string"
-                      },
-                      "No3": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "svalbard": {
-                "type": "object",
-                "properties": {
-                  "2010": {
-                    "type": "object",
-                    "properties": {
-                      "kategori": {
-                        "type": "string"
-                      },
-                      "år": {
-                        "type": "number"
-                      },
-                      "kriterier": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "gjeldende": {
-                    "type": "object",
-                    "properties": {
-                      "A": {
-                        "type": "string"
-                      },
-                      "B": {
-                        "type": "string"
-                      },
-                      "C": {
-                        "type": "string"
-                      },
-                      "D": {
-                        "type": "string"
-                      },
-                      "Trolig utdødd": {
-                        "type": "string"
-                      },
-                      "kategori": {
-                        "type": "string"
-                      },
-                      "lenke": {
-                        "type": "object",
-                        "properties": {
-                          "rødliste_2015": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "ÅrsakTilEndringAvKategori": {
-                        "type": "string"
-                      },
-                      "år": {
-                        "type": "number"
-                      },
-                      "AndelAvEuropeiskBestand": {
-                        "type": "string"
-                      },
-                      "AndelAvGlobalBestand": {
-                        "type": "string"
-                      },
-                      "AndelNåværendeBestand": {
-                        "type": "string"
-                      },
-                      "Generasjonslengde": {
-                        "type": "string"
-                      },
-                      "Hovedhabitat": {
-                        "type": "string"
-                      },
-                      "Kriteriedokumentasjon": {
-                        "type": "string"
-                      },
-                      "utbredelse": {
-                        "type": "object",
-                        "properties": {
-                          "sikker": {
-                            "type": "array",
-                            "items": {
-                              "type": "string"
-                            }
-                          },
-                          "usikker": {
-                            "type": "array",
-                            "items": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      },
-                      "Kriterier": {
-                        "type": "string"
-                      },
-                      "Påvirkningsfaktorer": {
-                        "type": "string"
-                      },
-                      "Po": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "autorkode": {
-            "type": "string"
-          },
-          "beskrivelse": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              },
-              "eng": {
-                "type": "string"
-              },
-              "nn": {
-                "type": "string"
-              },
-              "nb": {
-                "type": "string"
-              }
-            }
-          },
-          "norsk bestand": {
-            "type": "object",
-            "properties": {
-              "sted": {
-                "type": [
-                  "string",
-                  "number"
-                ]
-              }
-            }
-          },
-          "reproduksjon": {
-            "type": "object",
-            "properties": {
-              "generasjonstid": {
-                "type": "number"
-              },
-              "seksuell": {
-                "type": "boolean"
-              },
-              "aseksuell": {
-                "type": "boolean"
-              },
-              "livssyklus": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "hybridisering": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "flyvetid": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "beskrivelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "egg": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "risikovurdering": {
-            "type": "object",
-            "properties": {
-              "risikonivå": {
-                "type": "object",
-                "properties": {
-                  "2012": {
-                    "type": "number"
-                  },
-                  "ved_usikkerhet": {
-                    "type": "string"
-                  }
-                }
-              },
-              "overføring andre arter": {
-                "type": "object",
-                "properties": {
-                  "genetisk materiale": {
-                    "type": "number"
-                  },
-                  "parasitter/patogener": {
-                    "type": "number"
-                  }
-                }
-              },
-              "kriterie": {
-                "type": "object",
-                "properties": {
-                  "utenfor definisjon": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "synonym": {
-            "type": "object",
-            "properties": {
-              "sn": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "utbredelse": {
-            "type": "object",
-            "properties": {
-              "andel i sterkt endra natur (%)": {
-                "type": "number"
-              },
-              "areal": {
-                "type": "number"
-              },
-              "forekomstområde": {
-                "type": "object",
-                "properties": {
-                  "areal": {
-                    "type": "object",
-                    "properties": {
-                      "antatt": {
-                        "type": "number"
-                      },
-                      "kjent": {
-                        "type": "number"
-                      },
-                      "potensielt": {
-                        "type": "number"
-                      }
-                    }
-                  },
-                  "mørketall": {
-                    "type": "number"
-                  }
-                }
-              },
-              "geo variasjon": {
-                "type": "object",
-                "properties": {
-                  "reproduksjonsevne": {
-                    "type": "boolean"
-                  },
-                  "økologisk eff. begrensa til klimasoner": {
-                    "type": "boolean"
-                  },
-                  "økologisk eff. begrensa til naturtyper": {
-                    "type": "boolean"
-                  }
-                }
-              },
-              "global": {
-                "type": "object",
-                "properties": {
-                  "naturlig": {
-                    "type": "object",
-                    "properties": {
-                      "tropic": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_unspecified": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "temperate_nemoral": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_dry": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "temperate_boreal": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "temperate_dry": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "polar": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_mediterranean": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_highlands": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "unknown": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_humid": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_caperegion": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "marint": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "nåværende": {
-                    "type": "object",
-                    "properties": {
-                      "subtropic_unspecified": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "temperate_nemoral": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "tropic": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_mediterranean": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_dry": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "temperate_boreal": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "temperate_dry": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "polar": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_humid": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_caperegion": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "subtropic_highlands": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "unknown": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "marint": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "norge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  },
-                  "nåværende": {
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "tidslinje": {
-                "type": "object",
-                "properties": {
-                  "etablert_bestand": {
-                    "type": [
-                      "number",
-                      "string"
-                    ]
-                  },
-                  "først_observert": {
-                    "type": [
-                      "number",
-                      "string"
-                    ]
-                  }
-                }
-              },
-              "midt-norge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "beskrivelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "økologi_livssyklus": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "økologi_utbredelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "forekomststatus": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "globalt": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "nær_norge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "blomstringstid": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "habitat": {
-            "type": "object",
-            "properties": {
-              "voksested": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "levested": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "levesett": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "morfologi": {
-            "type": "object",
-            "properties": {
-              "kjennetegn": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  },
-                  "beskrivelse": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "mikroskopisk": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "struktur_oppbygging": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "kromosomtall": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "anatomi": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "beskrivelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "variasjon": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "kroppsdel": {
-                "type": "object",
-                "properties": {
-                  "kropp": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "skall": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "størrelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "kroppsbygning": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "farge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "gift": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "ytre_bygning": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "unge_stadier": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "vingespenn": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "larve": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "klekking": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "utseende": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "kjemi": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "sporefarge": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "tannformel": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "tradisjonell_bruk": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "systematikk": {
-            "type": "object",
-            "properties": {
-              "forveksling": {
-                "type": "object",
-                "properties": {
-                  "art": {
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
-                  },
-                  "beskrivelse": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "inndeling": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "nob": {
-                "type": "string"
-              },
-              "videre_bestemmelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "underart": {
-                "type": "object",
-                "properties": {
-                  "beskrivelse": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "karakteristisk": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "artsbestemmelse": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "geografi": {
-                "type": "object",
-                "properties": {
-                  "norden": {
-                    "type": "object",
-                    "properties": {
-                      "nob": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "taksonomi": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "navngivning": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "antall": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "body": {
-            "type": "object",
-            "properties": {
-              "eng": {
-                "type": "string"
-              },
-              "nob": {
-                "type": "string"
-              },
-              "nn": {
-                "type": "string"
-              }
-            }
-          },
-          "literal": {
-            "type": "object",
-            "properties": {
-              "Alias": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": [
-                      "array",
-                      "string"
-                    ],
-                    "items": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "kommentar": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "økologi": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "biologi": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "sang": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "predator": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "sykdom": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "parasitt": {
-            "type": "boolean"
-          },
-          "import": {
-            "type": "object",
-            "properties": {
-              "description": {
-                "type": "string"
-              }
-            }
-          },
-          "samarbeidspartnere": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "vert": {
-            "type": "object",
-            "properties": {
-              "art": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "referanse": {
-            "type": "object",
-            "properties": {
-              "nob": {
-                "type": "string"
-              }
-            }
-          },
-          "fysiologi": {
-            "type": "object",
-            "properties": {
-              "indre organer": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              },
-              "silke": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "diett": {
-            "type": "object",
-            "properties": {
-              "tekst": {
-                "type": "object",
-                "properties": {
-                  "nob": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "farge": {
-            "type": "string"
-          },
-          "infoUrl": {
-            "type": "string"
-          },
-          "sortering": {
-            "type": "number"
           }
         },
-        "required": [
-          "finnesINorge",
-          "foreldre",
-          "kode",
-          "nivå",
-          "tittel",
-          "url",
-          "autoritet",
-          "kodeautor",
-          "lenke",
-          "relasjon",
-          "truetvurdering",
-          "autorkode",
-          "reproduksjon",
-          "synonym",
-          "utbredelse",
-          "beskrivelse",
-          "norsk bestand",
-          "risikovurdering",
-          "blomstringstid",
-          "habitat",
-          "morfologi",
-          "tradisjonell_bruk",
-          "systematikk",
-          "body",
-          "økologi",
-          "kommentar",
-          "biologi",
-          "sang",
-          "literal",
-          "parasitt",
-          "import",
-          "samarbeidspartnere",
-          "vert",
-          "sykdom",
-          "diett",
-          "farge",
-          "sortering"
-        ]
+        "type": "object"
       }
     },
-    "meta": {
-      "type": "object",
-      "properties": {
-        "tittel": {
-          "type": "string"
-        },
-        "produsertUtc": {
-          "type": "string"
-        },
-        "utgiver": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
-        "tool": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "url": {
-              "type": "null"
-            }
-          }
-        },
-        "elementer": {
-          "type": "number"
-        }
-      }
-    },
-    "$schema": {
-      "type": "string"
-    }
+    "type": "object"
   },
   "meta": {
     "tittel": "Type.schema",
-    "produsertUtc": "2019-11-27T07:56:22.958Z",
+    "produsertUtc": "2020-04-30T08:23:12.228Z",
     "utgiver": "Artsdatabanken",
-    "url": "https://raw.githubusercontent.com/Artsdatabanken/art/master/type.schema.json",
+    "url": "https://raw.githubusercontent.com/Artsdatabanken/art/tree/type.schema.json",
     "tool": {
-      "name": "art-lastejobb"
+      "name": "art-lastejobb",
+      "commit": "https://github.com/Artsdatabanken/art-lastejobb/master/09f81fd29b416d071c1c1f968eb5205a8f05d854"
     },
-    "elementer": 3
+    "elementer": 3,
+    "source": [
+      {
+        "name": "art-takson/type",
+        "tittel": "Type",
+        "produsertUtc": "2020-01-13T13:44:25.165Z",
+        "utgiver": "Artsdatabanken",
+        "url": "https://raw.githubusercontent.com/Artsdatabanken/art-takson/master/type.json",
+        "tool": {
+          "name": "art-takson-lastejobb"
+        },
+        "elementer": 131450
+      },
+      {
+        "name": "40_fremmed",
+        "tittel": "40 fremmed",
+        "produsertUtc": "2020-04-30T08:23:08.904Z",
+        "utgiver": "Artsdatabanken",
+        "url": null,
+        "tool": {
+          "name": "art-lastejobb",
+          "commit": "https://github.com/Artsdatabanken/art-lastejobb/master/09f81fd29b416d071c1c1f968eb5205a8f05d854"
+        },
+        "elementer": 3142,
+        "source": [
+          {
+            "name": "20_fremmed",
+            "tittel": "20 fremmed",
+            "produsertUtc": "2020-04-30T08:23:07.519Z",
+            "utgiver": "Artsdatabanken",
+            "url": null,
+            "tool": {
+              "name": "art-lastejobb",
+              "commit": "https://github.com/Artsdatabanken/art-lastejobb/master/09f81fd29b416d071c1c1f968eb5205a8f05d854"
+            },
+            "elementer": 3142,
+            "source": [
+              {
+                "name": "art-takson/type",
+                "tittel": "Type",
+                "produsertUtc": "2020-01-13T13:44:25.165Z",
+                "utgiver": "Artsdatabanken",
+                "url": "https://raw.githubusercontent.com/Artsdatabanken/art-takson/master/type.json",
+                "tool": {
+                  "name": "art-takson-lastejobb"
+                },
+                "elementer": 131450
+              },
+              {
+                "name": "art-fremmed/art",
+                "tittel": "Art",
+                "produsertUtc": "2020-01-15T07:41:41.214Z",
+                "utgiver": "Artsdatabanken",
+                "url": "https://raw.githubusercontent.com/Artsdatabanken/fremmede-arter/master/art.json",
+                "tool": {
+                  "name": "fremmede-arter-lastejobb"
+                },
+                "elementer": 3142
+              }
+            ]
+          },
+          {
+            "name": "art-takson/type",
+            "tittel": "Type",
+            "produsertUtc": "2020-01-13T13:44:25.165Z",
+            "utgiver": "Artsdatabanken",
+            "url": "https://raw.githubusercontent.com/Artsdatabanken/art-takson/master/type.json",
+            "tool": {
+              "name": "art-takson-lastejobb"
+            },
+            "elementer": 131450
+          }
+        ]
+      },
+      {
+        "name": "10_truet",
+        "tittel": "10 truet",
+        "produsertUtc": "2020-04-30T08:23:05.656Z",
+        "utgiver": "Artsdatabanken",
+        "url": null,
+        "tool": {
+          "name": "art-lastejobb",
+          "commit": "https://github.com/Artsdatabanken/art-lastejobb/master/09f81fd29b416d071c1c1f968eb5205a8f05d854"
+        },
+        "elementer": 30278,
+        "source": [
+          {
+            "name": "art-truet/art",
+            "tittel": "Art",
+            "produsertUtc": "2020-04-30T07:43:08.696Z",
+            "utgiver": "Artsdatabanken",
+            "url": "https://raw.githubusercontent.com/Artsdatabanken/art-truet/tree/art.json",
+            "tool": {
+              "name": "truet-art-lastejobb",
+              "commit": "https://github.com/Artsdatabanken/art-truet-lastejobb/master/4f73dcb60ab5c93c6ab40da29048644f9adb1400"
+            },
+            "elementer": 30278,
+            "source": [
+              {
+                "name": "37_områder",
+                "tittel": "37 områder",
+                "produsertUtc": "2020-04-30T07:43:05.340Z",
+                "utgiver": "Artsdatabanken",
+                "url": null,
+                "tool": {
+                  "name": "truet-art-lastejobb",
+                  "commit": "https://github.com/Artsdatabanken/art-truet-lastejobb/master/4f73dcb60ab5c93c6ab40da29048644f9adb1400"
+                },
+                "elementer": 30278,
+                "source": [
+                  {
+                    "name": "30_unflatten",
+                    "tittel": "30 unflatten",
+                    "produsertUtc": "2020-04-30T07:10:10.689Z",
+                    "utgiver": "Artsdatabanken",
+                    "url": null,
+                    "tool": {
+                      "name": "truet-art-lastejobb",
+                      "commit": "https://github.com/Artsdatabanken/art-truet-lastejobb/master/4f73dcb60ab5c93c6ab40da29048644f9adb1400"
+                    },
+                    "elementer": 30278,
+                    "source": [
+                      {
+                        "name": "Alle artsgrupper SLICER",
+                        "tittel": "Alle artsgrupper slicer",
+                        "produsertUtc": "2020-04-30T07:10:06.881Z",
+                        "utgiver": "Artsdatabanken",
+                        "url": null,
+                        "tool": {
+                          "name": "truet-art-lastejobb",
+                          "commit": "https://github.com/Artsdatabanken/art-truet-lastejobb/master/4f73dcb60ab5c93c6ab40da29048644f9adb1400"
+                        },
+                        "elementer": 31314,
+                        "source": []
+                      },
+                      {
+                        "name": "art-takson/type",
+                        "tittel": "Type",
+                        "produsertUtc": "2020-01-13T13:44:25.165Z",
+                        "utgiver": "Artsdatabanken",
+                        "url": "https://raw.githubusercontent.com/Artsdatabanken/art-takson/master/type.json",
+                        "tool": {
+                          "name": "art-takson-lastejobb"
+                        },
+                        "elementer": 131450
+                      }
+                    ]
+                  },
+                  {
+                    "name": "art-truet-ubehandlet/område"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "30_databank",
+        "tittel": "30 databank",
+        "produsertUtc": "2020-04-30T08:23:07.769Z",
+        "utgiver": "Artsdatabanken",
+        "url": null,
+        "tool": {
+          "name": "art-lastejobb",
+          "commit": "https://github.com/Artsdatabanken/art-lastejobb/master/09f81fd29b416d071c1c1f968eb5205a8f05d854"
+        },
+        "elementer": 4000,
+        "source": [
+          {
+            "name": "art-databank/type",
+            "tittel": "Type",
+            "produsertUtc": "2020-04-30T08:20:14.225Z",
+            "utgiver": "Artsdatabanken",
+            "url": "https://raw.githubusercontent.com/Artsdatabanken/art-databank/tree/type.json",
+            "tool": {
+              "name": "art-databank-lastejobb",
+              "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/8d5bd4ea5ae1e52151693ac964685cf4c60f258a"
+            },
+            "elementer": 4000,
+            "source": [
+              {
+                "name": "30_arter",
+                "tittel": "30 arter",
+                "produsertUtc": "2020-04-30T08:20:09.840Z",
+                "utgiver": "Artsdatabanken",
+                "url": null,
+                "tool": {
+                  "name": "art-databank-lastejobb",
+                  "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/8d5bd4ea5ae1e52151693ac964685cf4c60f258a"
+                },
+                "elementer": 4779,
+                "source": [
+                  {
+                    "name": "20_denormalize",
+                    "tittel": "20 denormalize",
+                    "produsertUtc": "2020-04-30T08:20:06.040Z",
+                    "utgiver": "Artsdatabanken",
+                    "url": null,
+                    "tool": {
+                      "name": "art-databank-lastejobb",
+                      "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/8d5bd4ea5ae1e52151693ac964685cf4c60f258a"
+                    },
+                    "elementer": 306058,
+                    "source": [
+                      {
+                        "name": "10_clean",
+                        "tittel": "10 clean",
+                        "produsertUtc": "2020-04-30T08:19:57.157Z",
+                        "utgiver": "Artsdatabanken",
+                        "url": null,
+                        "tool": {
+                          "name": "art-databank-lastejobb",
+                          "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/84d73c61bd4f8fce04546cd9a8ca4e587adadb58"
+                        },
+                        "elementer": 306058,
+                        "source": [
+                          {
+                            "name": "databank"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "30_arter_taxon",
+                "tittel": "30 arter taxon",
+                "produsertUtc": "2020-04-30T08:20:09.975Z",
+                "utgiver": "Artsdatabanken",
+                "url": null,
+                "tool": {
+                  "name": "art-databank-lastejobb",
+                  "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/8d5bd4ea5ae1e52151693ac964685cf4c60f258a"
+                },
+                "elementer": 209940,
+                "source": [
+                  {
+                    "name": "20_denormalize",
+                    "tittel": "20 denormalize",
+                    "produsertUtc": "2020-04-30T08:20:06.040Z",
+                    "utgiver": "Artsdatabanken",
+                    "url": null,
+                    "tool": {
+                      "name": "art-databank-lastejobb",
+                      "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/8d5bd4ea5ae1e52151693ac964685cf4c60f258a"
+                    },
+                    "elementer": 306058,
+                    "source": [
+                      {
+                        "name": "10_clean",
+                        "tittel": "10 clean",
+                        "produsertUtc": "2020-04-30T08:19:57.157Z",
+                        "utgiver": "Artsdatabanken",
+                        "url": null,
+                        "tool": {
+                          "name": "art-databank-lastejobb",
+                          "commit": "https://github.com/Artsdatabanken/art-databank-lastejobb/master/84d73c61bd4f8fce04546cd9a8ca4e587adadb58"
+                        },
+                        "elementer": 306058,
+                        "source": [
+                          {
+                            "name": "databank"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "art-truet/type",
+        "tittel": "Type",
+        "produsertUtc": "2020-04-30T07:43:06.828Z",
+        "utgiver": "Artsdatabanken",
+        "url": "https://raw.githubusercontent.com/Artsdatabanken/art-truet/tree/type.json",
+        "tool": {
+          "name": "truet-art-lastejobb",
+          "commit": "https://github.com/Artsdatabanken/art-truet-lastejobb/master/4f73dcb60ab5c93c6ab40da29048644f9adb1400"
+        },
+        "elementer": 9,
+        "source": [
+          {
+            "name": "art-truet-ubehandlet/type.json"
+          }
+        ]
+      },
+      {
+        "name": "art-fremmed/type",
+        "tittel": "Type",
+        "produsertUtc": "2019-10-20T19:02:43.917Z",
+        "utgiver": "Artsdatabanken",
+        "url": "https://raw.githubusercontent.com/Artsdatabanken/fremmede-arter/master/type.json",
+        "tool": {
+          "name": "fremmede-arter-lastejobb"
+        },
+        "elementer": 6
+      }
+    ]
   }
 }
